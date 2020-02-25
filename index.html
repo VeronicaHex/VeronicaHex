@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CV</title>
+  </head>
+  <body class="wrapper">
+    <div class="two" >
+        <div class="border">
+            <u>Awards/Nominations</u>
+            <ul>
+                <li>Outstanding Business Support - Nominated</li>
+                <li>Excellence in Innovation - Won</li>
+                <li>Learning Technology Award - Won</li>
+            </ul>
+        </div>
+        <br>
+        <div class="border ">
+            <u>Sector Experiences</u>:
+            <ul>
+                <li>Education - 9 Years</li>
+                <li>Software Company - 1 Year</li>
+                <li>Social Housing - 2 Years</li>
+                <li>Retail - 2 Years</li>
+            </ul>
+        </div>
+        <br>
+        <div class="border">
+            <u>Software Experience</u>
+            <ul>
+                <li>Visual Studio - 14 Years </li>
+                <li>Visual Studio Code - 3 Years</li>
+                <li>SQL Server Management Studio - 14 Years</li>
+                <li>Business Intellegence Development Studio - 7 Years </li>
+                <li>SQL Server Data Tools - 5 Years</li>
+                <li>SQL Server Data Tools Business Intellegence - 5 Years</li>
+                <li>LinqPad - 5 Years</li>
+                <li>Windows - 20 Years </li>
+                <li>MacOS - 6 Years </li>
+                <li>Linux - 6 Months </li>
+                <li>EBS - 3 Years</li>  
+                <li>Prosolution - 3 Years </li>
+                <li>ProMonitor - 3 Years</li>
+                <li>ProPortal - 3 Years</li>
+                <li>OneFile - 8 Months</li>
+            </ul>
+        </div>
+        <br>
+        <div class="border">
+            <u>Technical Experience</u>
+            <ul>
+                <li>DHCP Management</li>
+                <li>DNS Management</li>
+                <br>
+                <li>SQL Server - 14 Years</li>
+                <li>SQL Server Analysis Services - 1.5 Years</li>
+                <li>SQL Server Analysis Services Tabular - 2 Years 8 Months</li>
+                <li>SQL Server Integration Services - 8 Years</li>
+                <li>SQL Server Reporting Services - 5 Years</li>
+                <li>PowerPivot - 3 Years</li>
+                <li>PowerBI - 8 Months</li>
+                <br>
+                <li>dotnet Framework - 14 Years</li>
+                <li>dotnet Core - 3 Years</li>
+                <li>VB.Net - 9 Years</li>
+                <li>C# - 5 Years</li>
+                <li>Windows Forms - 7 Years</li>
+                <li>Windows Services - 5 Years</li>
+                <li>NodeJS - 2 Years</li>
+                <li>ASP.Net MVC - 5 Years</li>
+                <li>ASP.Net Web Forms - 3 Years</li>
+                <li>ASP.Net Razor Pages - 2 Years</li>
+                <li>ASP.Net WebAPI - 4 Years</li>
+                <li>Entity Framework - 12 Years</li>
+                <li>Javascript - 5 Years</li>
+            </ul>
+        </div>
+    </div>
+    <div class="one">
+        <div class="center">
+            <h1>Technical CV</h1>
+            <ul>
+                <li>
+                    name: Veronica Hex
+                </li>
+                <li>
+                    email: veronicah3x@gmail.com
+                </li>
+                <li> 
+                    twitter: <a href="https://www.twitter.com/_veronicaHex_" target="new">@_VeronicaHex_</a>
+                </li>
+            </ul>
+            <div class="border">
+                
+            About Me: <br>
+            I have just over 14 years Technical Experience. 
+            <br>
+            In the last 5 years I've been working mainly on backend systems, creating windows services.
+            <div>
+                <u>Things I Want To Learn/Work With:</u>
+                <ul>
+                    <li>Linux / WSL2</li>
+                    <li>IoT</li>
+                    <li>RABBITMQ</li>
+                    <li>MongoDB</li>
+                    <li>Azure / AWS</li>
+                    <li>AI / Machine Learning</li>
+                    <li>Augmented Vision / Virtual Reality</li>
+                    <li>SharePoint</li>
+                    <li>Dynamics CRM</li>
+                </ul>
+            </div>
+            <br>
+                <div>
+                    <u>Professional Projects</u>
+                    <ul>
+                        <li>
+                            <u>Order Despatch Service</u>
+                            <div>
+                                TechList: <u>SQL Server</u>, <u>SQL Server broker Service</u>, <u>C#</u>, <u>Windows Service</u>, <u>asp.net mvc</u> <u>asp.net WebAPI</u>, <u>TCP</u>, <u>WinForms</u>
+                            </div>
+                            I created a windows service to interface with networked barcode scanners to read order numbers, this then connects to a remote server by using PowerShell Remote Management to access a batch file and pass in the order number. 
+                            This returns data indicating whether the order is at the correct status. If the order was at the correct status an invoice would be produced at the designated printer.
+                            The Service Used SQL Server Broker Service to monitor for scanner data changes and pushed those changes through immediately so settings changes occurred in real time.
+                            The service also monitored each of the designated printers to ensure they were in working order. Problems such as "out of ink/paper" resulted in the service holding and queueing orders until that's resolved. It also highlights when printers ink/paper levels are getting low as a warning.
+                            Additionally it hosted a WebAPI which exposed scanner service status, this showed if the scanner was connected, and if the printer was in working order.
+                            Each scanner operated on its own thread so not to block any other interaction.                           
+                            I had a MVC web front end to view the logs, make configuration changes. 
+                            
+                        </li>
+                        <li>
+                            <u>Student Welfare systems</u>
+                            <p>
+                                <div>
+                                    TechList: <u>SQL Server</u>, <u>SSIS</u>, <u>VB.Net</u>
+                                </div>
+                                    I was asked to look into how to monitor Unauthorised Student Absences. For this I created a table to log Unauthorised register marks at the end of day, then all of those students who had an unauthorised absence recorded were sent a text message "checking if they're okay", if students had safeguarding concerns recorded they weren't contacted.
+                                    <br>
+                                    A list of all absentee students were then sent to their Tutor to check in with them.
+                                    <br>
+                                    At the end of the week all absentees attendance for the week was collated together and emailed to Team Leaders / Managers so they could see how those absences were impacting learning for that week. Additionally there was a more detailed Attendance SSRS report which was linked and prefiltered for each student so Team Leaders / Managers could see which Classes were being affected
+                                    <br>
+                                    This highlighted a training issue as some lecturers were retroactively changing register marks, some tutors were marking registers late. So this email report had to be changed to highlight those changes or highlighting when registers were overdue
+                                </p>
+                        </li>
+                        <li>
+                            <u>Mifare Implementation</u>
+                            <p>
+                                <div>TechList: <u>SQL Server</u>, <u>VB.Net</u>, <u>WinForms</u>, <u>USB RFID Readers</u></div>
+                                Our IT Department bought in a Follow Me printing system, but their plan was to get every member of staff and students to register their cards at printers, which at peak enrolment time would be unfeasible. 
+                                I suggested that we could register the ID cards at point of issue; which would be simpler and free up staff from having to supervise.
+                                I altered the existing Windows Forms application which was used to produce Enrolment Documentation, to create the students network account and used a USB Mifare card reader to register the card to that account.
+                            </p>
+                        </li>
+                        <li>
+                            <u>Apprenticeship Integration and Reporting System</u>
+                            <div>TechList: <u>External API</u>, <u>SQL Server</u>, <u>C#</u>, <u>SSAS-Tabular</u>, <u>PowerBI</u></div>
+                            The task was to extract data from an online Apprenticeship platform. 
+                            I designed a SQL Server Database to store the data, and My boss was working on a python script for it, so I used that as a basis for creating a Windows service. 
+                            The service checked data for changes every couple of hours. 
+                            As part of this project I had to do a lot of data quality checking, as data was input from excel sheets. While doing quality checking we discovered that some students data was very incorrect some students had personal identifiers of a range of different students.
+                            I used a combination of SSAS-Tabular and PowerBI for Data Checking and Performance reports; looking at are students going to meet their end dates.
+                        </li>
+                        <li>
+                            <u>Performance Tuning a upscaled MS Access - SQL Database</u>
+                            <div>TechList: <u>SQL Server</u></div>
+                            This database was originally a MS Access database which was upscaled to SQL Server. The database contained no Indexes, which was impacting performance. I systematically went through each view and function to see where SQL Server was identifying where indexes were required.
+                            I then used my judgement to apply those indexes where they would be most beneficial. 
+                            Additionally I corrected use of a table valued function. This function returned a table which contained multiple columns of data yet the same function was being called multiple times with the same parameters to  return different columns. I aliased the table as a subquery, called it once which had a positive impact on the performance of that view.
+                        </li>
+                        <li>
+                            <u>XML Deserializer</u>
+                            <div>TechList: <u>SQL Server</u>, <u>Windows Service</u>, <u>C#</u>, <u>SSAS-Tabular</u>, <u>Excel</u>, <u>SSRS</u></div>
+                            I was tasked with creating a batch of reports from a Housing CRM system which was being used to log a number of call centre interactions. The CRM system stored all of its  case history in XML in a plain "text" field within a SQL Server Database.
+                            After searching around on the server itself I discovered there were XSD's definitions for each of the different case types. I created a service which extracted the data from SQL Server, Deserialized it with the XSD and stored that data in a SQL Server database. 
+                            Additionally the XSD schema was constantly in flux, so a part of the service was dedicated to on the fly, converting XSD's to <SchemaName>.cs, inserted a custom namespace / class name, then converted that to a dll which was then loaded in and used to Deserialize at runtime.
+                            The reporting was done with SSAS-Tabular, excel and SSRS
+                        </li>
+                        <li>
+                            <u>Housing Visit Logistics</u>
+                            <div>TechList: <u>Google Distance Matrix</u>, <u>C#</u>, <u>NodeJS</u>, <u>Express</u>, <u>Oracle</u>, <u>Asp.netMVC</u>, <u>Exchange Web services</u></div>
+                            I was tasked with creating a way of logging staff visits to tenants. This also looked at estimated travel times using Google Distance Matrix. We decided to use Exchange Web Services, so we can see staff availability and book their visits directly into their calendar. 
+                            We used NodeJS and Express to interface with the oracle housing database to return where they were visiting, this was overlaid in a asp.net mvc page which was using FullCalendar.IO to render bookings and make the bookings by selecting available timeslots.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <u>Day to day</u>
+                    <ul>
+                        <li>Customer Interactions</li>
+                        <li>Requirement Gathering</li>
+                        <li>User Support</li>
+                        <li>User Training</li>
+                        <li>Attending User Groups</li>
+                        <li>Ad-hoc Reporting</li>
+                        <li>Server Monitoring / Backup Monitoring</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+  </body>
+</html>
